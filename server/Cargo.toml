@@ -1,0 +1,15 @@
+[package]
+resolver = "2"
+name = "sec_chat_server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lib_sec = { path = "../lib_sec" }
+hex = "*"
+rsa = "0.9.6"
+tokio = { version = "*", features = ["full"] }
+sqlx = { features = ["runtime-tokio", "tls-rustls", "mysql"], version = "*" }
+dotenv = "*"
+uuid = "*"
+rand = "*"

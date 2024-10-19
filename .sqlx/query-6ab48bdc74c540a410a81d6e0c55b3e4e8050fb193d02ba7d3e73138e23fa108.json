@@ -1,0 +1,24 @@
+{
+  "db_name": "MySQL",
+  "query": "select public_key from users where user_id = ?",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "public_key",
+        "type_info": {
+          "type": "Blob",
+          "flags": "NOT_NULL | BLOB | NO_DEFAULT_VALUE",
+          "max_size": 262140
+        }
+      }
+    ],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": [
+      false
+    ]
+  },
+  "hash": "6ab48bdc74c540a410a81d6e0c55b3e4e8050fb193d02ba7d3e73138e23fa108"
+}
